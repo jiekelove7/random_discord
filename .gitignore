@@ -1,7 +1,10 @@
 node_modules/
+__pycache__/
+.vscode/
 
 .npm
 .env
 
 #config file
 config.json
+config.py
