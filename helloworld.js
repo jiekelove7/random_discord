@@ -3,13 +3,10 @@ const login = require('./config.json');
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-// Logs messages it sees on console
-// Successful!
-/*
 client.on('message', message => {
-    console.log(message.content);
+    if(message.author.bot) return;
+    message.channel.send("Hello World!");
 })
-*/
 
 client.once('ready', () => {
     console.log('Ready!');
